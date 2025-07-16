@@ -5,6 +5,8 @@ import "./index.css";
 import DinamicOpenMenu from "./contextStore/DinamicOpenMenu.jsx";
 import ApiProductContext from "./contextStore/ApiProduct.jsx";
 
+
+// TODO: dynamic etdiyimiz sehive
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <DinamicOpenMenu>
