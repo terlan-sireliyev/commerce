@@ -27,7 +27,7 @@ const ProductContactSeller = () => {
   }, []);
 
   return (
-    <div className="mx-auto overflow-hidden rounded-lg border border-gray-300 bg-white shadow-md">
+    <div className="mx-auto overflow-hidden mt-2 rounded-lg border border-gray-300 bg-white shadow-md">
       {/* Seller Information */}
       <div className="flex items-center bg-gray-50 p-5">
         <img

@@ -9,6 +9,8 @@ const UserOpenMenuIcon = ({
   userName = "John Doe",
 }) => {
   const favoriteData = useSelector((state) => state.favoriteName.favoriteItems);
+    const bookmarks = useSelector((state) => state.bookmarkName.bookmarks);
+
   const { basketData } = globalBasketData((state) => state);
   return (
     <div className="relative" ref={menuRef}>
@@ -46,7 +48,7 @@ const UserOpenMenuIcon = ({
                 >
                   <div className="flex items-center gap-3 rounded-md px-3 py-2 transition-all duration-200 hover:bg-blue-100">
                     <span className="text-[25px] text-blue-400">
-                      {link.icon}
+                      {link.icon } 
                     </span>
                     <span>{link.title}</span>
                     {link.title === "Favorite items" &&
@@ -60,6 +62,13 @@ const UserOpenMenuIcon = ({
                         {basketData.length}
                       </span>
                     )}
+                    {
+                      link.title === "Saves items" && bookmarks.length > 0 &&(
+                        <span className="ml-auto rounded-full bg-blue-200 px-2 py-0.5 text-xs text-gray-600">
+                          {bookmarks.length}
+                        </span>
+                        )
+                    }
                   </div>
                 </NavLink>
               </li>

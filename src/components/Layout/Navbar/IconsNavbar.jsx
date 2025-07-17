@@ -49,7 +49,7 @@ const IconsNavbar = () => {
 
   return (
     <>
-      <div className="border-grau-500 mr-4 flex gap-5 border-r-2 py-2 pr-10 max-md:hidden">
+      <div className="border-grau-500 mr-4 flex gap-5 border-r-2 py-2 pr-10 max-sm:hidden">
         {/*HiShoppingCart*/}
         <div className="relative">
           <HiShoppingCart

@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductComment = () => {
   return (
-    <div className="mx-auto max-w-2xl rounded-lg bg-white p-4 shadow-lg">
+    <div className="mx-auto   max-w-2xl rounded-lg mt-2 p-4 border border-gray-300 bg-white shadow-md  ">
       {/* Comment Header */}
       <h2 className="mb-4 text-xl font-bold text-gray-800">Product Comments</h2>
 
