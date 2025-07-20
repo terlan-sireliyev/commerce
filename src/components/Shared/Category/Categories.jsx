@@ -47,23 +47,23 @@ const Categories = ({ category, handleCategoryClick, pro, activeCategory }) => {
   };
 
   return (
-    <div className="w-full px-2 mt-5">
+    <div className="mt-5 w-full px-2">
       <Slider {...settings}>
         {/* "All" button */}
         <div
-          className={`flex flex-col items-center justify-center gap-2 rounded-lg p-3 shadow-md transition duration-300 cursor-pointer ${
-            activeCategory === null
-              ? "border border-green-600 text-green-600"
-              : "text-black hover:bg-blue-500 hover:text-white"
-          }`}
+         className={`mx-[7.5px] flex flex-col items-center justify-center gap-2 border-l-2 p-3 transition duration-300 cursor-pointer ${
+    activeCategory === null
+      ? "border-green-600 text-green-600"
+      : "text-black hover:bg-blue-500 hover:text-white"
+  }`}
           onClick={() => handleCategoryClick(null)}
         >
-          <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full shadow-lg bg-white">
+          <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-white shadow-lg">
             <span className="text-[30px]">
               <FaThLarge />
             </span>
           </div>
-          <div className="text-center text-sm font-semibold mt-2">
+          <div className="mt-2 text-center text-sm font-semibold">
             All ({pro.length})
           </div>
         </div>
@@ -73,19 +73,19 @@ const Categories = ({ category, handleCategoryClick, pro, activeCategory }) => {
           <div
             key={cateItem}
             onClick={() => handleCategoryClick(cateItem)}
-            className={`flex flex-col items-center justify-center gap-2 rounded-lg p-3 shadow-md transition duration-300 cursor-pointer ${
+            className={`mx-[7.5px] flex cursor-pointer flex-col gap-2 border-l-2 p-3 transition duration-300 ${
               activeCategory === cateItem
-                ? "border border-green-600 text-green-600"
+                ? "border-green-600 text-green-600"
                 : "text-black hover:bg-blue-500 hover:text-white"
             }`}
           >
-            <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full shadow-lg bg-white">
+            <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-white shadow-lg">
               <span className="text-[35px]">{icons[index % icons.length]}</span>
             </div>
-            <div className="text-center text-sm font-semibold mt-2 max-md:hidden">
+            <div className="mt-2 text-center text-sm font-semibold max-md:hidden">
               {cateItem}
             </div>
-            <div className="text-center text-sm font-semibold mt-2 hidden max-md:block">
+            <div className="mt-2 hidden text-center text-sm font-semibold max-md:block">
               {cateItem.slice(0, 10)}
             </div>
           </div>

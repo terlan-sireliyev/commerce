@@ -48,7 +48,7 @@ const CartItem = (products) => {
 
         <div className="flex w-full flex-col">
           <div className="flex justify-between items-center">
-            <span className="text-sm font-semibold text-gray-800">Tharlan</span>
+            <span className="text-sm font-semibold text-gray-800">John Doe</span>
             <span className="text-sm text-gray-500">2024-11-18, 14:00</span>
           </div>
           <span className="text-sm text-gray-500">Baku, Azerbaijan</span>

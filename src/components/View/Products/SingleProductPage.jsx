@@ -49,7 +49,7 @@ const WidthAllPage =
           </div>
         </div>
         {/* Right side - Contact Seller */}
-        <div className="ml-2 max-sm:ml-0">
+        <div className="max-sm:ml-0">
           <ProductContactSeller productData={productData} />
           {/* Pass product data */}
         </div>

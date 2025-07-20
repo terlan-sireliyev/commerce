@@ -26,13 +26,13 @@ const BarMenuInside = ({ user }) => {
       <div className="mb-4 flex items-center space-x-4 border-b pb-4">
         <img
           src={
-            "https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg"
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7NWttsEvAfBbaLehwK3oLrf_3AX_1tgfblg&s"
           }
           alt={`profile`}
           className="h-12 w-12 rounded-full border-2 border-gray-300 shadow-md"
         />
         <div>
-          <h3 className="text-lg font-semibold text-gray-800">{"Admin"}</h3>
+          <h3 className="text-lg font-semibold text-gray-800">{"John Doe"}</h3>
           <p className="text-sm text-gray-500">Welcome back!</p>
         </div>
       </div>

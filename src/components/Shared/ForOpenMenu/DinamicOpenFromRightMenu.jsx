@@ -38,7 +38,10 @@ const DinamicOpenFromRightMenu = ({ menuType, textContent }) => {
     return false;
   };
 
-  const widthClass = menuType === "bar" ? "w-[270px]" : "w-[100%]";
+const widthClass =
+  menuType === "bar"
+    ? "w-[400px] max-w-full sm:w-[400px]"
+    : "w-[80%] lg:w-[30%]";
 
   return (
     <>

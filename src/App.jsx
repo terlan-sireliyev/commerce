@@ -20,7 +20,6 @@ import Publish_Page from "./components/View/Publish/Publish_Page";
 
 function App() {
   return (
-    // FIXME: bu bizim routerlerdir
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
