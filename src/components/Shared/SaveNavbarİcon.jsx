@@ -13,7 +13,7 @@ const SaveNavbarIcon = () => {
   };
 
   return (
-    <div className="p-4 max-w-md mx-auto bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-md border border-gray-200 mt-8">
+    <div className="p-4  mx-auto bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-md border border-gray-200 mt-8">
       <div className="flex justify-between items-center mb-5 border-b pb-3">
         <h2 className="text-xl font-bold text-gray-800">Bookmarks</h2>
         {bookmarks.length > 0 && (

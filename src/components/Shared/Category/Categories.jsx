@@ -14,10 +14,10 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Categories = ({ category, handleCategoryClick, pro, activeCategory }) => {
   const icons = [
-    <IoIosWoman />,
+    <IoMan />,
     <GiJewelCrown />,
     <IoLogoElectron />,
-    <IoMan />,
+    <IoIosWoman />,
   ];
 
   const settings = {

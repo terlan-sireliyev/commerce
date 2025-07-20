@@ -3,7 +3,7 @@ import { notifications } from "./Notification_Mock";
 
 const Notification = () => {
   return (
-    <div className="mx-auto max-w-md overflow-hidden rounded-lg bg-white">
+    <div className="mx-auto overflow-hidden rounded-lg bg-white">
       <div className="bg-blue-600 p-4 text-center text-lg font-semibold text-white">
         Notifications
       </div>
