@@ -1,32 +1,8 @@
-import React, { useEffect, useState } from "react";
 import { BsEnvelopePlus } from "react-icons/bs";
 import { GiVibratingSmartphone } from "react-icons/gi";
-import { FaShoppingCart } from "react-icons/fa";
-import { Link, useParams } from "react-router-dom";
-import axios from "axios";
 
 const ProductContactSeller = () => {
-  const { productId } = useParams(); // URL-dən ID-ni al
-  const [productData, setProductData] = useState(null); // Tək məhsul üçün state
-  const [products, setProducts] = useState([]); // Bütün məhsullar (satıcının digər məhsulları üçün)
-
-  // Tək məhsul üçün məlumat çək
-  useEffect(() => {
-    axios
-      .get("https://fakestoreapi.com/products/" + productId)
-      .then((res) => {
-        setProductData(res.data);
-      });
-  }, [productId]);
-
-  // Bütün məhsulları çək
-  useEffect(() => {
-    axios.get("https://fakestoreapi.com/products").then((res) => {
-      setProducts(res.data);
-    });
-  }, []);
-
-  return (
+    return (
     <div className="mx-auto overflow-hidden mt-2 rounded-lg border border-gray-300 bg-white shadow-md">
       {/* Seller Information */}
       <div className="flex items-center bg-gray-50 p-5">
@@ -59,13 +35,9 @@ const ProductContactSeller = () => {
         </div>
 
         <button className="flex w-full items-center justify-center gap-2 rounded-md bg-blue-500 py-3 text-white transition hover:bg-blue-600">
-          <FaShoppingCart className="text-xl" />
-          <span className="font-semibold">Add To Cart</span>
+          <span className="font-semibold">Contact seller</span>
         </button>
       </div>
-
- 
-
     </div>
   );
 };

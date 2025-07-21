@@ -1,6 +1,6 @@
-import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteBookmark } from "../../../ReduxStore/bookmark/Bookmark";
+import { Link } from "react-router-dom";
 
 const Save_Page = () => {
   const bookmarks = useSelector((state) => state.bookmarkName.bookmarks);
@@ -15,7 +15,7 @@ const Save_Page = () => {
       {bookmarks.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {bookmarks.map((item) => (
-            <div
+            <Link to={`/singleProductPage/${item.id}`}
               key={item.id}
               className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-4 flex flex-col min-h-[350px]"
             >
@@ -37,7 +37,7 @@ const Save_Page = () => {
                   Remove
                 </button>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       ) : (

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaTrashAlt } from "react-icons/fa";
 import globalBasketData from "../../../../zustandStore";
 import Basket_ClearAndCheckOut from "./Basket_ClearAndCheckOut";
-
+import { Link } from "react-router-dom";
 const BasketCart = () => {
   // const [openCheckOut, setOpenCheckOut] = useState(false);
   const { basketData, increment, decrement, removeFromCart } = globalBasketData(
@@ -22,11 +22,13 @@ const BasketCart = () => {
                 key={item.id}
                 className="mb-4 flex items-center justify-between bg-white p-4 shadow-sm"
               >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="h-20 w-20 rounded-md object-cover"
-                />
+                <Link to={`/singleProductPage/${item.id}`}>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="h-20 w-20 rounded-md object-cover"
+                  />
+                </Link>
                 <div className="ml-4 flex-1">
                   <h2 className="text-lg font-medium">{item.title}</h2>
                   <p className="text-gray-500">${item.price}</p>

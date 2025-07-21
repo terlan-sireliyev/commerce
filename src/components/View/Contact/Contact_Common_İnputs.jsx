@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import InputLogin from "../../Ui/inputs/InputLogin";
 import Contact_Text_Area from "../../Ui/textArea/Contact_Text_Area";
 

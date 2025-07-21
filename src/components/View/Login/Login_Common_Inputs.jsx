@@ -1,7 +1,7 @@
-import React from "react";
 import InputLogin from "../../Ui/inputs/InputLogin";
 import InputCheckBoxLogin from "../../Ui/inputs/InputCheckBoxLogin";
 
+// eslint-disable-next-line react/prop-types
 const Login_Common_Inputs = ({ formLogin, changeLoginInputs }) => {
   return (
     <>
@@ -10,6 +10,7 @@ const Login_Common_Inputs = ({ formLogin, changeLoginInputs }) => {
           type={"email"}
           htmlFor={"email"}
           name={"email"}
+          // eslint-disable-next-line react/prop-types
           value={formLogin.email}
           onChange={changeLoginInputs}
           classNameInput={
@@ -26,6 +27,7 @@ const Login_Common_Inputs = ({ formLogin, changeLoginInputs }) => {
         type={"password"}
         htmlFor={"password"}
         name={"password"}
+        // eslint-disable-next-line react/prop-types
         value={formLogin.password}
         onChange={changeLoginInputs}
         classNameInput={

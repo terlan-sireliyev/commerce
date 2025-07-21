@@ -1,4 +1,3 @@
-import React from "react";
 import { notifications } from "./Notification_Mock";
 
 const Notification = () => {

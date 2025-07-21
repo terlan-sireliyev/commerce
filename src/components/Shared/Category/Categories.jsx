@@ -1,5 +1,6 @@
-import React from "react";
-import Slider from "react-slick"; // SLIDER İMPORTU
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-key */
+import Slider from "react-slick"; // SLIDER IMPORT
 
 import {
   IoIosWoman,
@@ -12,6 +13,7 @@ import {
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// eslint-disable-next-line react/prop-types
 const Categories = ({ category, handleCategoryClick, pro, activeCategory }) => {
   const icons = [
     <IoMan />,

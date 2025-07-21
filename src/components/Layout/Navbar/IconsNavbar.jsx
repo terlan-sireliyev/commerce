@@ -1,6 +1,6 @@
-import React, { useContext, useState, useEffect, useRef } from "react";
+import  { useContext, useState, useEffect, useRef } from "react";
 import { FaBars, FaPaperPlane, FaSignInAlt } from "react-icons/fa";
-import { MdOutlineNotificationsNone, MdViewList } from "react-icons/md";
+import { MdOutlineNotificationsNone } from "react-icons/md";
 import { CiBookmark } from "react-icons/ci";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { HiShoppingCart } from "react-icons/hi";
@@ -16,10 +16,8 @@ const IconsNavbar = () => {
     toggleNotificationMenu,
     toggleEnvelopeMenu,
     toggleBarMenu,
-    toggleListMenu,
     toggleBasketMenu,
     toggleUserMenu,
-    // isSaveOpen,
     toggleSave,
   } = useContext(saveContext);
 
@@ -87,16 +85,6 @@ const IconsNavbar = () => {
             0
           </span>
         </div>
-        {/* MdViewList */}
-        {/* <div className="relative">
-          <MdViewList
-            onClick={toggleListMenu}
-            className="cursor-pointer text-2xl"
-          />
-          <span className="absolute -bottom-[10px] -right-2 flex items-center justify-center rounded-full bg-[#EDD840] px-[5px] text-sm text-white">
-            6
-          </span>
-        </div> */}
       </div>
 
       <div className="flex items-center gap-4 rounded-lg bg-white p-2">

@@ -1,5 +1,5 @@
-import React from "react";
 //in publish page input
+// eslint-disable-next-line react/prop-types
 const Input = ({ type, classNameInput, name, placeholder,changeTextMore,more}) => {
   return (
     <input
