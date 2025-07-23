@@ -1,9 +1,10 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import {
   My_Basket_Delet_Btn,
   My_Basket_decrement_Btn,
   My_Basket_increment_Btn,
-} from "../../Ui/buttons/Order_Buttons";
+} from "../../Ui/buttons/Order_Buttons"
+
 import { My_increment_decrement_Input } from "../../Ui/inputs/Inputs";
 import { globalBasketData } from "../ProfileAssets";
 

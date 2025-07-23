@@ -2,8 +2,11 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import DinamicOpenMenu from "./contextStore/DinamicOpenMenu.jsx";
-import ApiProductContext from "./contextStore/ApiProduct.jsx";
+import DinamicOpenMenu from "./store/contextStore/DinamicOpenMenu.jsx";
+// import DinamicOpenMenu from "./
+// 
+// ";
+import ApiProductContext from "./store/contextStore/ApiProduct.jsx";
 
 
 createRoot(document.getElementById("root")).render(

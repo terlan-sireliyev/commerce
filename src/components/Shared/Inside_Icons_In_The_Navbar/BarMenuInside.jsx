@@ -1,19 +1,12 @@
-import React, { useContext } from "react";
-import {
-  FaHome,
-  FaEnvelope,
-  // FaPhone,
-  // FaSignInAlt,
-  // FaUserPlus,
-} from "react-icons/fa";
-import { FcAbout } from "react-icons/fc";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { saveContext } from "../../../contextStore/DinamicOpenMenu";
+import { saveContext } from "../../../store/contextStore/DinamicOpenMenu";
 import Login_Comp from "../Login_Register/Login_Comp";
 import Register_Comp from "../Login_Register/Register_Comp";
 import Links from "../Links";
+import { navigationLinks } from "../../../constants/navigation";
 
-const BarMenuInside = ({ user }) => {
+const BarMenuInside = () => {
   const { toggleBarMenu } = useContext(saveContext);
 
   const handleLinkClick = () => {
@@ -51,24 +44,20 @@ const BarMenuInside = ({ user }) => {
       {/* Menu List */}
       <div className="w-full space-y-4">
         <ul className="m-0 list-none p-0">
-          <Links
-            routerLinks={"/"}
-            LinkName={"Home"}
-            handleLinkClick={handleLinkClick}
-            icons={<FaHome className="text-xl" />}
-          />
-          <Links
-            routerLinks={"/About_Page"}
-            LinkName={"About us"}
-            handleLinkClick={handleLinkClick}
-            icons={<FcAbout className="text-xl" />}
-          />
-          <Links
-            routerLinks={"/Contact_Page"}
-            LinkName={"Contact"}
-            handleLinkClick={handleLinkClick}
-            icons={<FaEnvelope className="text-xl" />}
-          />
+          {navigationLinks.map((item) => {
+            const Icon = item.icon;
+
+            return (
+              <Links
+                key={item.id}
+                routerLinks={item.href}
+                LinkName={item.title}
+                icons={<Icon className="text-xl" />}
+                //  icons={item.icon}
+                handleLinkClick={handleLinkClick}
+              />
+            );
+          })}
         </ul>
       </div>
 

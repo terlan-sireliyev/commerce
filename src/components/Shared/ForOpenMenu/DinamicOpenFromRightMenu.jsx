@@ -1,7 +1,9 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import { IoClose } from "react-icons/io5";
-import { saveContext } from "../../../contextStore/DinamicOpenMenu";
-import styles from "../../Layout/Navbar/navbar.module.css";
+import { saveContext } from "../../../store/contextStore/DinamicOpenMenu";
+import styles from "../../../Layout/Navbar/navbar.module.css";
+
+// eslint-disable-next-line react/prop-types
 const DinamicOpenFromRightMenu = ({ menuType, textContent }) => {
   const {
     isNotificationMenuOpen,

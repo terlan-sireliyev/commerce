@@ -1,4 +1,4 @@
-import Cart from "../Cart/Cart-page";
+import Cart from "../../components/View/Cart/Cart-page";
 
 const Home = () => {
 const WidthAllPage =

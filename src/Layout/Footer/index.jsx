@@ -5,9 +5,11 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import { HiLocationMarker, HiMail, HiPhone } from "react-icons/hi";
+import { navigationLinks } from "../../constants/navigation";
 
 const WidthAllPage = "mx-auto w-full max-w-[1200px] px-4 sm:px-6 md:px-8";
 
+// eslint-disable-next-line react/prop-types
 const Footer = ({ isPublishingPage, isFullSinglePage }) => {
   return (
     <footer
@@ -25,8 +27,8 @@ const Footer = ({ isPublishingPage, isFullSinglePage }) => {
           <h3 className="mb-4 text-xl font-semibold">About Us</h3>
           <p className="leading-relaxed text-gray-300">
             Recognized globally as the best platform for online classifieds, we
-            strive to meaningfully connect buyers and sellers. Whether you're
-            searching for your first car or a new home, we're here to help you
+            strive to meaningfully connect buyers and sellers. Whether you&apos;re
+            searching for your first car or a new home, we&apos;re here to help you
             achieve your dreams.
           </p>
         </div>
@@ -35,18 +37,13 @@ const Footer = ({ isPublishingPage, isFullSinglePage }) => {
         <div>
           <h3 className="mb-4 text-xl font-semibold">Quick Links</h3>
           <ul className="space-y-3 text-gray-400">
-            {[
-              "Home",
-              "Services",
-              "About Us",
-              "Careers",
-              "Contact",
-            ].map((link, index) => (
+            {navigationLinks.map((link, index) => (
               <li key={index} className="transition hover:text-white">
-                <a href="#">{link}</a>
+                <a href={link.href}>{link.title}</a>
               </li>
             ))}
           </ul>
+          
         </div>
 
         {/* Contact Info */}

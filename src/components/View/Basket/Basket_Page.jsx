@@ -1,11 +1,10 @@
-import React from "react";
 import Basket_Cart_Inside from "../../Shared/Basket/Basket_Cart_Inside";
 import { Basket_Cart_Footer } from "../../Shared/Basket/Basket_Cart_Footer";
 import { Basket_Link } from "../../Shared/Basket/Basket_Mock";
-import globalBasketData from "../../../zustandStore";
+import globalBasketData from "../../../store/zustandStore";
 // import Basket_ClearAndCheckOut from "./Basket_ClearAndCheckOut";
 const Basket_Page = () => {
-   const { basketData, increment, decrement, removeFromCart } = globalBasketData(
+   const { basketData, increment, decrement } = globalBasketData(
     (state) => state,
   );
   // const withNavbar =

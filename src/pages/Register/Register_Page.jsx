@@ -1,8 +1,8 @@
 import React from "react";
-import Social_Media_Login from "../../Shared/Social_Media_Login";
-import DontHaveAccount from "../../Shared/DontHaveAccount";
+import Social_Media_Login from "../../components/Shared/Social_Media_Login";
+import DontHaveAccount from "../../components/Shared/DontHaveAccount";
 import Register_Common_Inputs from "./Register_Common_Inputs";
-import { My_Login_Btn } from "../../Ui/buttons/Order_Buttons";
+import { My_Login_Btn } from "../../components/Ui/buttons/Order_Buttons";
 
 const Register_Page = () => {
   const [formRegister, setFormRegister] = React.useState({

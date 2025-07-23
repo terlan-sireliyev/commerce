@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 const Links = ({ handleLinkClick, routerLinks, icons, LinkName }) => {
   return (
     <Link to={routerLinks} onClick={handleLinkClick}>

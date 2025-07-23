@@ -1,6 +1,6 @@
-import React from "react";
 import InputLogin from "../../Ui/inputs/InputLogin";
 import Btns from "../../Ui/buttons/Btns";
+// import Btns from "../../Ui/buttons/Btns";
 
 const Message_Right = () => {
   return (
@@ -32,7 +32,7 @@ const Message_Right = () => {
         {/* Outgoing message */}
         <div className="flex items-start justify-end">
           <div className="max-w-xs rounded-xl bg-green-400 p-4 text-white shadow-lg">
-            <p>I'm doing well, thanks! How about you?</p>
+            <p>I&apos;m doing well, thanks! How about you?</p>
           </div>
           <img
             src="https://randomuser.me/api/portraits/men/77.jpg"

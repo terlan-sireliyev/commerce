@@ -1,10 +1,10 @@
 import  { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaRegHeart, FaRegComment, FaRegBookmark } from "react-icons/fa";
-import globalBasketData from "../../../zustandStore";
+import globalBasketData from "../../../store/zustandStore";
 import { useDispatch } from "react-redux";
-import { addFavorite } from "../../../ReduxStore/favorite/FavoriteSlice";
-import { addBookmark } from "../../../ReduxStore/bookmark/Bookmark";
+import { addFavorite } from "../../../store/ReduxStore/favorite/FavoriteSlice";
+import { addBookmark } from "../../../store/ReduxStore/bookmark/Bookmark";
 
 const CartItem = (products) => {
   const {
@@ -40,7 +40,7 @@ const CartItem = (products) => {
       <div className="flex items-center gap-3 bg-gray-100 p-4">
         <Link to={`/singleProductPage/${id}`} className="h-[40px] w-[46px]">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7NWttsEvAfBbaLehwK3oLrf_3AX_1tgfblg&s"
+            src="https://media.istockphoto.com/id/1400577262/photo/happy-mature-african-american-man-standing-alone-against-a-red-background-in-a-studio-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=oR0_NyouKgPESp508Bag8GEN_JbkIA3SJoYs4s_3iXI="
             alt="User Avatar"
             className="h-full w-full rounded-full object-cover"
           />

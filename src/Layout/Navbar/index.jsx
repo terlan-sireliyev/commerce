@@ -1,13 +1,17 @@
-import React from "react";
 import IconsNavbar from "./IconsNavbar";
-import Logo from "../../Shared/Logo";
-import DinamicOpenFromRightMenu from "../../Shared/ForOpenMenu/DinamicOpenFromRightMenu";
-import Notifications from "../../Shared/Inside_Icons_In_The_Navbar/Notification/Notifications";
-import BasketCart from "../../Shared/Inside_Icons_In_The_Navbar/Basket/BasketCart";
-import BarMenuInside from "../../Shared/Inside_Icons_In_The_Navbar/BarMenuInside";
-import User_Menu_Mobile_Inside from "../../Shared/Inside_Icons_In_The_Navbar/User_Menu_Mobile_Inside";
-import Bar_Menu_Message from "../../Shared/Inside_Icons_In_The_Navbar/Message/Bar_Menu_Message";
-import SaveNavbarİcon from "../../Shared/SaveNavbarİcon";
+// import Logo from "../../Shared/Logo";
+
+import Logo from "../../components/Shared/Logo"
+import DinamicOpenFromRightMenu from "../../components/Shared/ForOpenMenu/DinamicOpenFromRightMenu";
+import Notifications from "../../components/Shared/Inside_Icons_In_The_Navbar/Notification/Notifications";
+import BasketCart from "../../components/Shared/Inside_Icons_In_The_Navbar/Basket/BasketCart";
+import BarMenuInside from "../../components/Shared/Inside_Icons_In_The_Navbar/BarMenuInside";
+import User_Menu_Mobile_Inside from "../../components/Shared/Inside_Icons_In_The_Navbar/User_Menu_Mobile_Inside";
+import Bar_Menu_Message from "../../components/Shared/Inside_Icons_In_The_Navbar/Message/Bar_Menu_Message";
+// import SaveNavbarİcon from "../../Shared/SaveNavbarİcon";
+
+import SaveNavbarİcon from "../../components/Shared/SaveNavbarİcon";
+
 
 const Navbar = () => {
   const widthNavbar =

@@ -1,7 +1,6 @@
-import React from "react";
-import InputCheckBoxLogin from "../../Ui/inputs/InputCheckBoxLogin";
-import InputLogin from "../../Ui/inputs/InputLogin";
-
+/* eslint-disable react/prop-types */
+import InputCheckBoxLogin from "../../components/Ui/inputs/InputCheckBoxLogin";
+import InputLogin from "../../components/Ui/inputs/InputLogin";
 const Register_Common_Inputs = ({ formRegister, changeRegisterInputs }) => {
   return (
     <>

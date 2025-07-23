@@ -1,5 +1,5 @@
-import InputLogin from "../../Ui/inputs/InputLogin";
-import InputCheckBoxLogin from "../../Ui/inputs/InputCheckBoxLogin";
+import InputLogin from "../../components/Ui/inputs/InputLogin";
+import InputCheckBoxLogin from "../../components/Ui/inputs/InputCheckBoxLogin";
 
 // eslint-disable-next-line react/prop-types
 const Login_Common_Inputs = ({ formLogin, changeLoginInputs }) => {

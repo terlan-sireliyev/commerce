@@ -1,6 +1,7 @@
-import globalBasketData from "../../../zustandStore";
+import globalBasketData from "../../../store/zustandStore";
 import Input from "./Input";
 
+// eslint-disable-next-line react/prop-types
 const My_increment_decrement_Input = ({ qnt }) => {
    const { basketData } = globalBasketData((state) => state);
 

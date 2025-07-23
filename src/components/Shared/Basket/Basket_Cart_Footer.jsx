@@ -1,9 +1,8 @@
-import React from "react";
 import {
   My_Continue_Btn,
   My_Shopping_Btn,
 } from "../../Ui/buttons/Order_Buttons";
-import globalBasketData from "../../../zustandStore";
+import globalBasketData from "../../../store/zustandStore";
 import { FaReceipt, FaMoneyBill, FaTags } from "react-icons/fa";
 
 export const Basket_Cart_Footer = () => {

@@ -1,7 +1,9 @@
 import React from "react";
 import Contact_Common_İnputs from "./Contact_Common_İnputs";
-import Contact_Address from "../../Shared/Contact_Address";
-import { My_Contact_Btn } from "../../Ui/buttons/Order_Buttons";
+// import Contact_Address from "../../Shared/Contact_Address";
+import Contact_Address from "../../components/Shared/Contact_Address";
+
+import { My_Contact_Btn } from "../../components/Ui/buttons/Order_Buttons";
 
 const Contact_Page = () => {
   const [formData, setFormData] = React.useState({

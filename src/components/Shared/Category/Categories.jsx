@@ -53,11 +53,11 @@ const Categories = ({ category, handleCategoryClick, pro, activeCategory }) => {
       <Slider {...settings}>
         {/* "All" button */}
         <div
-         className={`mx-[7.5px] flex flex-col items-center justify-center gap-2 border-l-2 p-3 transition duration-300 cursor-pointer ${
-    activeCategory === null
-      ? "border-green-600 text-green-600"
-      : "text-black hover:bg-blue-500 hover:text-white"
-  }`}
+          className={`mx-[7.5px] flex cursor-pointer flex-col items-center justify-center gap-2 border-l-2 p-3 transition duration-300 ${
+            activeCategory === null
+              ? "border-green-600 text-green-600"
+              : "text-black hover:bg-blue-500 hover:text-white"
+          }`}
           onClick={() => handleCategoryClick(null)}
         >
           <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-white shadow-lg">
@@ -75,13 +75,13 @@ const Categories = ({ category, handleCategoryClick, pro, activeCategory }) => {
           <div
             key={cateItem}
             onClick={() => handleCategoryClick(cateItem)}
-            className={`mx-[7.5px] flex cursor-pointer flex-col gap-2 border-l-2 p-3 transition duration-300 ${
+            className={`group mx-[7.5px] flex cursor-pointer flex-col gap-2 border-l-2 p-3 transition duration-300 ${
               activeCategory === cateItem
-                ? "border-green-600 text-green-600"
+                ? "border-green-600 text-green-600 "
                 : "text-black hover:bg-blue-500 hover:text-white"
             }`}
           >
-            <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-white shadow-lg">
+            <div className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-white shadow-lg transition group-hover:text-green-500">
               <span className="text-[35px]">{icons[index % icons.length]}</span>
             </div>
             <div className="mt-2 text-center text-sm font-semibold max-md:hidden">

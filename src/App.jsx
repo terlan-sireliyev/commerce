@@ -1,22 +1,25 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Layout from "./components/Layout/Layout";
-import Home_Page from "./components/View/Home/Home_Page";
+import Layout from "./Layout/Layout";
+import Home_Page from "./pages/Home/Home_Page";
 import Profile_Page from "./components/View/Profile/Profile_Page";
 import Search from "./components/View/Search/Search-page";
 import Message_Page from "./components/View/Messages/Message_Page";
 import Basket_Page from "./components/View/Basket/Basket_Page";
-import Favorite_Page from "./components/View/Favorite/Favorite_Page";
+import Favorite_Page from "./pages/Favorite/Favorite_Page";
 import Save_Page from "./components/View/Save/Save_Page";
 import MyOrder_Page from "./components/View/MyOrder/MyOrder_Page";
 import MyAllOrder_Page from "./components/View/MyAllOrder/MyAllOrder_Page";
 import Checkout from "./components/View/Checkout/Checkout-page";
-import Login_Page from "./components/View/Login/Login_Page";
-import Register_Page from "./components/View/Register/Register_Page";
-import Contact_Page from "./components/View/Contact/Contact_Page";
-import About_Page from "./components/View/About/About_Page";
+import Login_Page from "./pages/Login/Login_Page";
+// import Register_Page from "./components/View/Register/Register_Page";
+
+import Register_Page from "./pages/Register/Register_Page";
+
+import Contact_Page from "./pages/Contact/Contact_Page";
+import About_Page from "./pages/About/About_Page";
 import SingleProductPage from "./components/View/Products/SingleProductPage";
-import Publish_Page from "./components/View/Publish/Publish_Page";
+import Publish_Page from "./pages/Publish/Publish_Page";
 
 function App() {
   return (

@@ -1,9 +1,9 @@
-import React from "react";
 import { MyOrderData } from "./My_Order_Mock";
 import {
   My_Order_Btn_View,
   My_Order_Btn_ShoppingContinue,
 } from "../../Ui/buttons/Order_Buttons";
+
 const My_Order_Cart = () => {
   return (
     <div className="mx-auto rounded-xl bg-gray-100 px-4 py-16">

@@ -1,7 +1,6 @@
-import React from "react";
 import { FaTrashAlt, FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
-import { deletFavorite } from "../../../ReduxStore/favorite/FavoriteSlice";
+import { deletFavorite } from "../../../store/ReduxStore/favorite/FavoriteSlice";
 import { Link } from "react-router-dom";
 
 const Favorite = () => {

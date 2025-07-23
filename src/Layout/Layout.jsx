@@ -1,9 +1,8 @@
-import React from "react";
 import Navbar from "./Navbar/index";
 import { Outlet, useLocation } from "react-router-dom";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
-import { persist, store } from "../../ReduxStore/index";
+import { persist, store } from "../store/ReduxStore/index";
 import Footer from "./Footer/index";
 
 const Layout = () => {

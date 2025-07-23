@@ -1,7 +1,7 @@
 import React from "react";
-import Publish_Header_Ui from "../../Shared/Publish/Publish_Header_Ui";
-import Publish_Center from "../../Shared/Publish/Publish_Center";
-import Publish_Footer from "../../Shared/Publish/Publish_Footer";
+import Publish_Header_Ui from "../../components/Shared/Publish/Publish_Header_Ui";
+import Publish_Center from "../../components/Shared/Publish/Publish_Center";
+import Publish_Footer from "../../components/Shared/Publish/Publish_Footer";
 
 const PublishPage = () => (
   <div

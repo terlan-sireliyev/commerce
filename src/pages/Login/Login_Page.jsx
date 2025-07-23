@@ -1,8 +1,8 @@
 import React from "react";
-import Social_Media_Login from "../../Shared/Social_Media_Login";
+import Social_Media_Login from "../../components/Shared/Social_Media_Login";
 import Login_Common_Inputs from "./Login_Common_Inputs";
-import DontHaveAccount from "../../Shared/DontHaveAccount";
-import { My_Login_Btn } from "../../Ui/buttons/Order_Buttons";
+import DontHaveAccount from "../../components/Shared/DontHaveAccount";
+import { My_Login_Btn } from "../../components/Ui/buttons/Order_Buttons";
 
 const Login_Page = () => {
   const [formLogin, setFormLogin] = React.useState({
@@ -19,7 +19,6 @@ const Login_Page = () => {
   };
 
   const loginSubmit = (e) => {
-    // TODO: asdasd
     e.preventDefault();
     console.log(formLogin);
   };

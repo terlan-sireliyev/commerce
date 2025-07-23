@@ -1,6 +1,6 @@
 import React from "react";
 import Btn from "./Btn";
-import globalBasketData from "../../../zustandStore";
+import globalBasketData from "../../../store/zustandStore";
 // Function 1: My_Order_Btn_View
 const My_Order_Btn_View = () => {
   return (

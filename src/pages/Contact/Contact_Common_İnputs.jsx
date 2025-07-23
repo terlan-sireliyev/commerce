@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import InputLogin from "../../Ui/inputs/InputLogin";
-import Contact_Text_Area from "../../Ui/textArea/Contact_Text_Area";
+import InputLogin from "../../components/Ui/inputs/InputLogin";
+import Contact_Text_Area from "../../components/Ui/textArea/Contact_Text_Area";
 
 const Contact_Common_İnputs = ({ formLogin, changeLoginInputs }) => {
   return (

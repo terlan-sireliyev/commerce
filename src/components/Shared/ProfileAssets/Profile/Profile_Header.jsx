@@ -1,4 +1,3 @@
-import React from "react";
 
 const Profile_Header = () => {
   const gridHeaderClass = "max-md:col-span-5 max-lg:col-span-4 ";
@@ -6,11 +5,11 @@ const Profile_Header = () => {
   return (
     <>
       <div className="mt-4 flex justify-center pr-4 max-md:col-span-5">
-        <img
-          className="h-40 w-[100%] object-cover"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJwdKRBdVAngoYFnNpF-VY1-zRr0cP8wrBjQ&s"
-          alt="User Photo"
-        />
+    <img
+  className="w-[300px] h-[160px] object-cover max-md:w-[300px] max-md:h-[160px]"
+  src="https://media.istockphoto.com/id/1400577262/photo/happy-mature-african-american-man-standing-alone-against-a-red-background-in-a-studio-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=oR0_NyouKgPESp508Bag8GEN_JbkIA3SJoYs4s_3iXI="
+  alt="User Photo"
+/>
       </div>
       <div
         className={`${gridHeaderClass} max-lg: col-span-2 my-auto max-lg:mt-4 max-lg:pl-2 max-md2:ml-2 max-md:ml-0`}

@@ -1,11 +1,9 @@
-import React, { useState } from "react";
 import { FaTrashAlt } from "react-icons/fa";
-import globalBasketData from "../../../../zustandStore";
+import globalBasketData from "../../../../store/zustandStore";
 import Basket_ClearAndCheckOut from "./Basket_ClearAndCheckOut";
 import { Link } from "react-router-dom";
 const BasketCart = () => {
-  // const [openCheckOut, setOpenCheckOut] = useState(false);
-  const { basketData, increment, decrement, removeFromCart } = globalBasketData(
+    const { basketData, increment, decrement, removeFromCart } = globalBasketData(
     (state) => state,
   );
 

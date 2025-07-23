@@ -1,9 +1,10 @@
-import React, { createContext, useState, useEffect } from "react";
+import  { createContext, useState, useEffect } from "react";
 import axios from "axios";
 
 // Kontekst yaradılır
 export const ApiContext = createContext();
 
+// eslint-disable-next-line react/prop-types
 export default function ApiProductContext({ children }) {
   const [products, setProducts] = useState([]);
 

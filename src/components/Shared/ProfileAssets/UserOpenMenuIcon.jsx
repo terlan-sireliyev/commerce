@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import globalBasketData from "../../../zustandStore";
+import globalBasketData from "../../../store/zustandStore";
 import { MdOutlineLogout, NAV_LINK, NavLink } from "./index";
 import { useLocation } from "react-router";
 import { useEffect } from "react";
@@ -25,7 +25,7 @@ const UserOpenMenuIcon = ({
     <div className="relative" ref={menuRef}>
       <img
         className="h-[40px] w-[40px] cursor-pointer rounded-full border-2 border-gray-300 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
-        src="https://cdn-icons-png.flaticon.com/512/219/219988.png"
+        src="https://media.istockphoto.com/id/1400577262/photo/happy-mature-african-american-man-standing-alone-against-a-red-background-in-a-studio-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=oR0_NyouKgPESp508Bag8GEN_JbkIA3SJoYs4s_3iXI="
         alt="User Icon"
         onClick={toggleMenu}
       />
@@ -35,7 +35,7 @@ const UserOpenMenuIcon = ({
           <div className="flex items-center border-b border-gray-200 p-3">
             <img
               className="h-10 w-10 rounded-full border-2 border-blue-500"
-              src="https://cdn-icons-png.flaticon.com/512/219/219988.png"
+              src="https://media.istockphoto.com/id/1400577262/photo/happy-mature-african-american-man-standing-alone-against-a-red-background-in-a-studio-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=oR0_NyouKgPESp508Bag8GEN_JbkIA3SJoYs4s_3iXI="
               alt="User"
             />
             <span className="ml-2 font-semibold text-gray-800">{userName}</span>

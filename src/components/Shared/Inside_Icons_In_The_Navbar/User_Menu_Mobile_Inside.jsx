@@ -1,10 +1,9 @@
-import React, { useContext, useState } from "react";
-import { ApiContext } from "../../../contextStore/ApiProduct";
+import { useContext, useState } from "react";
+import { ApiContext } from "../../../store/contextStore/ApiProduct";
 
 const User_Menu_Mobile_Inside = () => {
   const [searchInputValue, setSearchInputValue] = useState("");
   const [category, setCategory] = useState("");
-  // const [priceRange, setPriceRange] = useState("");
   const [filteredResults, setFilteredResults] = useState([]);
 
   const { products } = useContext(ApiContext);
@@ -12,11 +11,7 @@ const User_Menu_Mobile_Inside = () => {
   // Unikal kateqoriyalar
   const categoryOptions = [...new Set(products.map((p) => p.category))];
 
-  // Seçilən kateqoriyaya uyğun məhsullar
-  const filteredByCategory = category
-    ? products.filter((p) => p.category === category)
-    : products
-
+  
   // Filter funksiyası
   const handleFilter = () => {
     let results = products;

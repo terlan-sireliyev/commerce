@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { deleteBookmark } from "../../../ReduxStore/bookmark/Bookmark";
+import { deleteBookmark } from "../../../store/ReduxStore/bookmark/Bookmark";
 import { Link } from "react-router-dom";
 
 const Save_Page = () => {
